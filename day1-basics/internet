@@ -1,0 +1,155 @@
+The WEB
+Internet (or The Web) is a massive distributed client/server information system.
+Many applications are running concurrently over the Web, such as web browsing/surfing, 
+e-mail, file transfer, audio & video streaming, and so on.  
+In order for proper communication to take place between the client and the server, 
+these applications must agree on a specific application-level protocol 
+such as HTTP, FTP, SMTP, POP, and etc
+
+HyperText Transfer Protocol (HTTP)
+HTTP (Hypertext Transfer Protocol) is perhaps the most popular application protocol used in the Internet (or The WEB).
+    HTTP is an asymmetric request-response client-server protocol.
+        An HTTP client sends a request message to an HTTP server.  
+        The server, in turn, returns a response message.  In other words, 
+        HTTP is a pull protocol, the client pulls information from the server 
+        (instead of server pushes information down to the client).
+    HTTP is a stateless protocol. In other words, the current request does not 
+        know what has been done in the previous requests.
+    HTTP permits negotiating of data type and representation, 
+        so as to allow systems to be built independently of the data being transferred.
+        Quoting from the RFC2616: "The Hypertext Transfer Protocol (HTTP) is an application-level 
+        protocol for distributed, collaborative, hypermedia information systems. 
+        It is a generic, stateless, protocol which can be used for many tasks beyond its use for hypertext, 
+        such as name servers and distributed object management systems, through extension of its request methods, 
+        error codes and headers."
+Browser
+Whenever you issue a URL(uniform resource locator) from your browser to get a web resource using HTTP, 
+e.g. http://www.nowhere123.com/index.html, the browser turns the URL into a request message 
+and sends it to the HTTP server. The HTTP server interprets the request message, and returns you an 
+appropriate response message, which is either the resource you requested or an error message. 
+
+Uniform Resource Locator (URL)
+A URL (Uniform Resource Locator) is used to uniquely identify a resource over the web. URL has 
+the following syntax:
+protocol://hostname:port/path-and-file-name
+There are 4 parts in a URL:
+Protocol: The application-level protocol used by the client and server, e.g., HTTP, FTP, and telnet.
+Hostname: The DNS domain name (e.g., www.nowhere123.com) or IP address (e.g., 192.128.1.2) of the server.
+Port: The TCP port number that the server is listening for incoming requests from the clients.
+Path-and-file-name: The name and location of the requested resource, under the server document base directory.
+For example, in the URL http://www.nowhere123.com/docs/index.html, the communication protocol is HTTP; 
+the hostname is www.nowhere123.com. 
+The port number was not specified in the URL, and takes on the default number, which is TCP port 80 for HTTP. 
+The path and file name for the resource to be located is "/docs/index.html".
+Other examples of URL are:
+ftp://www.ftp.org/docs/test.txt
+mailto:user@test101.com
+news:soc.culture.Singapore
+telnet://www.nowhere123.com/
+
+
+FrontEnd/BackEnd
+Front End and Back End: Frontend and Backend are the two most popular terms used in web development. 
+    These terms are very crucial for web development but are quite different from each other. 
+    Each side needs to communicate and operate effectively with the other as a single unit to 
+    improve the website’s functionality. 
+
+Front End Development: The part of a website that the user interacts with directly is termed the front end. 
+    It is also referred to as the ‘client side’ of the application. 
+    It includes everything that users experience directly: text colors and styles, images, 
+    graphs and tables, buttons, colors, and navigation menu. HTML, CSS, and JavaScript are the languages 
+    used for Front End development. The structure, design, behavior, and content of everything seen on browser
+    screens when websites, web applications, or mobile apps are opened up, is implemented by front End 
+    developers. Responsiveness and performance are two main objectives of the Front End. 
+    The developer must ensure that the site is responsive i.e. it appears correctly on devices of all sizes 
+    no part of the website should behave abnormally irrespective of the size of the screen. 
+
+Front end Languages: The front end portion is built by using some languages which are discussed below: 
+
+    HTML: HTML stands for Hypertext Markup Language. It is used to design the front-end portion of web pages using 
+        a markup language. HTML is the combination of Hypertext and Markup language. 
+        Hypertext defines the link between the web pages. The markup language is used to define the text 
+        documentation within the tag which defines the structure of web pages.
+    CSS: Cascading Style Sheets fondly referred to as CSS is a simply designed language intended 
+        to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages.
+        More importantly, CSS enables you to do this independent of the HTML that makes up each web page.
+    JavaScript: JavaScript is a famous scripting language used to create magic on the sites to make the 
+        site interactive for the user. It is used to enhancing the functionality of a website to running cool
+        games and web-based software.
+    
+    There are many other languages through which one can do front-end development depending upon the 
+    framework for example Flutter user Dart, React uses JavaScript and Django uses Python, and much more.
+
+    Front End Frameworks and Libraries: 
+        AngularJS: AngularJs is a JavaScript open-source front-end framework that is mainly used to 
+            develop single-page web applications(SPAs). It is a continuously growing and expanding 
+            framework which provides better ways for developing web applications. It changes the static HTML
+            to dynamic HTML. It is an open-source project which can be free. It extends HTML attributes 
+            with Directives, and data is bound with HTML.
+        React.js: React is a declarative, efficient, and flexible JavaScript library for building user 
+            interfaces. ReactJS is an open-source, component-based front-end library responsible only for the 
+            view layer of the application. It is maintained by Facebook. 
+        Bootstrap: Bootstrap is a free and open-source tool collection for creating responsive websites 
+            and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing 
+            responsive, mobile-first websites.
+        jQuery: jQuery is an open-source JavaScript library that simplifies the interactions between an 
+            HTML/CSS document, or more precisely the Document Object Model (DOM), and JavaScript. 
+            Elaborating the terms, jQuery simplifies HTML document traversing and manipulation, 
+            browser event handling, DOM animations, Ajax interactions, and cross-browser 
+            JavaScript development.
+        SASS: It is the most reliable, mature, and robust CSS extension language. It is used to extend 
+            the functionality of an existing CSS of a site including everything from variables, 
+            inheritance, and nesting with ease.
+        Flutter: Flutter is an open-source UI development SDK managed by google. 
+            It is powered by Dart programming language. It builds performant and good-looking natively 
+            complied applications for mobile (Ios, Android), web, and desktop from a single code base. 
+            The key selling point of flutter is flat development is made easier, expressive, and flexible 
+            UI and native performance. In march 2021 flutter announce Flutter 2 which upgrades flutter 
+            to build release applications for the web, and the desktop is in beta state.
+        
+        Some other libraries and frameworks are Semantic-UI, Foundation, Materialize, Backbone.js, 
+            Ember.js, etc.
+
+Backend Development: Backend is the server-side of the website. It stores and arranges data, 
+    and also makes sure everything on the client-side of the website works fine. It is the part of the 
+    website that you cannot see and interact with. It is the portion of software that does not come in direct 
+    contact with the users. The parts and characteristics developed by backend designers are indirectly 
+    accessed by users through a front-end application. Activities, like writing APIs, creating libraries, 
+    and working with system components without user interfaces or even systems of scientific programming, 
+    are also included in the backend. 
+
+Back end Languages: The back end portion is built by using some languages which are discussed below: 
+ 
+    PHP: PHP is a server-side scripting language designed specifically for web development. 
+        Since PHP code executed on the server-side, so it is called a server-side scripting language.
+    C++: It is a general-purpose programming language and widely used nowadays for competitive 
+        programming. It is also used as a backend language.
+    Java: Java is one of the most popular and widely used programming languages and platforms. 
+        It is highly scalable. Java components are easily available.
+    Python: Python is a programming language that lets you work quickly and integrate systems 
+        more efficiently.
+    JavaScript: JavaScript can be used as both (front end and back end) programming languages.
+        Node.js: Node.js is an open-source and cross-platform runtime environment for executing 
+        JavaScript code outside a browser. You need to remember that NodeJS is not a framework, 
+        and it’s not a programming language. Most people are confused and understand it’s a framework 
+        or a programming language. We often use Node.js for building back-end services like APIs like 
+        Web App or Mobile App. It’s used in production by large companies such as Paypal, Uber, Netflix, 
+        Walmart, and so on.
+    
+    Back End Frameworks: 
+
+    The list of back-end frameworks are: Express, Django, Rails, Laravel, Spring, etc.
+    The other back-end program/scripting languages are C#, Ruby, REST, GO, etc.
+    Difference between Frontend and Backend: Frontend and backend development are quite different 
+    from each other, but still, they are two aspects of the same situation. 
+    The frontend is what users see and interact with and the backend is how everything works. 
+    
+
+    The frontend is the part of the website users can see and interact with such as the graphical 
+    user interface (GUI) and the command line including the design, navigating menus, texts, 
+    images, videos, etc. Backend, on the contrary, is the part of the website users cannot see 
+    and interact with.
+    The visual aspects of the website that can be seen and experienced by users are frontend. 
+    On the other hand, everything that happens in the background can be attributed to the backend.
+    Languages used for the front end are HTML, CSS, JavaScript while those used for the backend 
+    include Java, Ruby, Python, .Net.
