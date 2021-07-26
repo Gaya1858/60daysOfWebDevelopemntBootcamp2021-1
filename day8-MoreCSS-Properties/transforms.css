@@ -1,0 +1,13 @@
+/*
+transform: rotate(45deg)
+rotate: units deg, radians
+you can rotate any deg of all elements 
+transform: scale(2,1) you can just do one value too. lessthan one you are shrinking
+translateX(200px)
+skew(10deg,5deg)
+
+*/
+#green{
+
+    transform: rotate(45deg);
+}

@@ -1,0 +1,14 @@
+/* opacity you can mention with keyword
+opacity = 0 to 1 */
+
+section{
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+  }
+  #opacity{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 1;
+  }

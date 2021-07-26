@@ -1,0 +1,22 @@
+body{
+    background-color: cadetblue;
+}
+button{
+    background: none;
+    color:black;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.2s;
+    align-items: center;
+}
+button:hover{
+    border-color: yellow;
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    /* parameters of box_shadow
+    0 x-offset, 0.5em y-offset, 0.5em blur and
+    -0.4em spread radius*/
+    transform: translate(y);
+    cursor: pointer;
+}

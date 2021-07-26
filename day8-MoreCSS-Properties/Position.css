@@ -1,0 +1,33 @@
+/* Position property
+it sets an element how an element is positioned in a document
+every element positioned as static by default.
+relative: keeps the element whatever we mention like top, bottm, left and right
+absolute: acts just opposite to the relative
+fixed: it will be useful when you scroll down it will be moving to the curser
+*/
+
+div{
+    display: inline-block;
+}
+#blue{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    
+}
+#green{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color:cadetblue;
+    top: 50px;
+    
+}
+#navy{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:navy;
+    top: 10px;
+    
+}

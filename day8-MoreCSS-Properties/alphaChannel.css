@@ -1,0 +1,13 @@
+/* alpha you can mention at the end of th ergb color set
+it should be between 0 to 1. 1 makes the color transperant and 
+0 makes it nothing */
+section{
+  width: 500px;
+  height: 500px;
+  background-color: magenta;
+}
+#rgba{
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255,255,255,0.5)
+}
