@@ -1,0 +1,39 @@
+/* The flex model has 2 properties
+main axis - goes left to right
+flex direction : allows us to mentione main axis
+display: flex;
+flex-direction: row-reverse; 
+flex-direction: column;
+flex-direction: column-reverse;
+######
+justify-content: there are many option
+flex-wrap : wrap along the main axis
+align items
+distribute or align items on the cross axis
+align-items: flex-start
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+#container div{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
